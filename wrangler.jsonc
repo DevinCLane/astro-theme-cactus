@@ -1,6 +1,9 @@
 {
   "name": "astro-theme-cactus",
   "compatibility_date": "2026-04-30", // Update to the day you deploy
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "assets": {
     "directory": "./dist"
   }
