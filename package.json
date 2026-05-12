@@ -19,7 +19,7 @@
 		"@astrojs/mdx": "5.0.0",
 		"@astrojs/rss": "4.0.17",
 		"@astrojs/sitemap": "3.7.1",
-		"@tailwindcss/vite": "4.2.1",
+		"@tailwindcss/vite": "4.3.0",
 		"astro": "6.0.4",
 		"astro-expressive-code": "^0.41.7",
 		"astro-icon": "^1.1.5",
@@ -37,7 +37,7 @@
 		"satori": "0.25.0",
 		"satori-html": "^0.3.2",
 		"sharp": "^0.34.5",
-		"tailwindcss": "^4.2.1",
+		"tailwindcss": "^4.3.0",
 		"unified": "^11.0.5",
 		"unist-util-visit": "^5.1.0"
 	},
@@ -54,12 +54,17 @@
 		"pagefind": "^1.4.0",
 		"prettier": "^3.8.1",
 		"prettier-plugin-astro": "0.14.1",
-		"prettier-plugin-tailwindcss": "^0.7.2",
+		"prettier-plugin-tailwindcss": "^0.8.0",
 		"reading-time": "^1.5.0",
 		"typescript": "^5.9.3"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": ["@biomejs/biome", "@tailwindcss/oxide", "esbuild", "sharp"],
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"@tailwindcss/oxide",
+			"esbuild",
+			"sharp"
+		],
 		"overrides": {
 			"sharp": "^0.34.5"
 		}
