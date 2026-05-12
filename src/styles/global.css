@@ -50,7 +50,7 @@
 	--color-global-text: oklch(26.99% 0.0096 235.05);
 	--color-muted: oklch(44.6% 0.03 256.802);
 	--color-link: oklch(0.72583 0.165625 360);
-	--color-accent: oklch(55.27% 0.195 19.06);
+	--color-accent: oklch(0.306641 0.070313 20);
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: oklch(0.626953 0.14375 20);
 }
