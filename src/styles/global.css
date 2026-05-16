@@ -46,11 +46,12 @@
 
 /* you could refactor below to use light-dark(), depending on your target audience */
 @theme {
-	--color-global-bg: oklch(98.48% 0 0);
-	--color-global-text: oklch(26.99% 0.0096 235.05);
-	--color-muted: oklch(44.6% 0.03 256.802);
+	/* purpleish */
+	--color-global-bg: oklch(97.7% 0.01 308.299);
+	--color-global-text: oklch(14.5% 0.008 326);
+	--color-muted: oklch(37% 0.044 257.287);
 	--color-link: oklch(0.72583 0.165625 360);
-	--color-accent: oklch(0.306641 0.070313 20);
+	--color-accent: oklch(59.2% 0.249 0.584);
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: oklch(0.626953 0.14375 20);
 }
