@@ -31,6 +31,7 @@ export default defineConfig({
     provider: fontProviders.fontsource(),
     name: "Miranda Sans",
     cssVariable: "--font-miranda-sans",
+    weights: ["400 700"]
   }],
 
   integrations: [
