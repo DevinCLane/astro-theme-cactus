@@ -44,6 +44,10 @@
 	initial-value: oklch(55.27% 0.195 19.06);
 }
 
+@theme inline {
+	--font-sans: var(--font-miranda-sans);
+}
+
 /* you could refactor below to use light-dark(), depending on your target audience */
 @theme {
 	/* purpleish */

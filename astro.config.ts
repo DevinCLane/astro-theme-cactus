@@ -29,8 +29,8 @@ export default defineConfig({
   
   fonts: [{
     provider: fontProviders.fontsource(),
-    name: "Roboto",
-    cssVariable: "--font-roboto",
+    name: "Miranda Sans",
+    cssVariable: "--font-miranda-sans",
   }],
 
   integrations: [
