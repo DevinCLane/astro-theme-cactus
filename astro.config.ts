@@ -4,7 +4,7 @@ import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@tailwindcss/vite";
-import { defineConfig, envField } from "astro/config";
+import { defineConfig, envField, fontProviders } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
@@ -25,7 +25,13 @@ export default defineConfig({
 
   image: {
       domains: ["webmention.io"],
-	},
+    },
+  
+  fonts: [{
+    provider: fontProviders.fontsource(),
+    name: "Roboto",
+    cssVariable: "--font-roboto",
+  }],
 
   integrations: [
       expressiveCode(expressiveCodeOptions),
