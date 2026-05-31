@@ -57,7 +57,7 @@
 	--color-link: oklch(0.72583 0.165625 360);
 	--color-accent: oklch(59.2% 0.249 0.584);
 	--color-accent-2: oklch(18.15% 0 0);
-	--color-quote: oklch(0.626953 0.14375 20);
+	--color-quote: oklch(0.3272 0.1652 263.02);
 }
 
 @layer base {
@@ -78,7 +78,7 @@
 			--color-link: oklch(0.72583 0.165625 360);
 			--color-accent: oklch(0.85 0.1002 347.29);
 			--color-accent-2: oklch(94.66% 0 0);
-			--color-quote: oklch(0.626953 0.14375 20);
+			--color-quote: oklch(0.9001 0.0685 222.22);
 		}
 
 		--color-mode-transition-duration: 300ms;
