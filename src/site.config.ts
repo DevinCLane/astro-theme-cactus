@@ -9,8 +9,9 @@ export const siteConfig: SiteConfig = {
 		- The webmanifest name found in astro.config.ts L:42
 		- The link value found in src/components/layout/Header.astro L:35
 		- In the footer found in src/components/layout/Footer.astro L:12
+		- the title in the OG image
 	*/
-	title: "Devin Lane",
+	title: "Devin Lane's website",
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
 	author: "Devin Lane",
 	// Used as the default description meta property and webmanifest description

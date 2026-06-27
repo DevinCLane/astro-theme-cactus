@@ -1,8 +1,8 @@
 import type { APIContext, InferGetStaticPropsType } from "astro";
 import satori, { type SatoriOptions } from "satori";
 import sharp from "sharp";
-import RobotoMonoBold from "@/assets/roboto-mono-700.ttf";
-import RobotoMono from "@/assets/roboto-mono-regular.ttf";
+import MirandaSans from "@/assets/fonts/miranda-sans-latin-400-normal.woff"
+import MirandaSansBold from "@/assets/fonts/miranda-sans-latin-700-normal.woff"
 import { getAllPosts } from "@/data/post";
 import { getFormattedDate } from "@/utils/date";
 import { readCache, writeToCache } from "./_cacheUtil";
@@ -12,14 +12,14 @@ const ogOptions: SatoriOptions = {
 	// debug: true,
 	fonts: [
 		{
-			data: Buffer.from(RobotoMono),
-			name: "Roboto Mono",
+			data: Buffer.from(MirandaSans),
+			name: "Miranda Sans",
 			style: "normal",
 			weight: 400,
 		},
 		{
-			data: Buffer.from(RobotoMonoBold),
-			name: "Roboto Mono",
+			data: Buffer.from(MirandaSansBold),
+			name: "Miranda Sans",
 			style: "normal",
 			weight: 700,
 		},
