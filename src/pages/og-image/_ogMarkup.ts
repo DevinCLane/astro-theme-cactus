@@ -16,6 +16,6 @@ export const ogMarkup = (title: string, pubDate: string) =>
 		</div>
 		<div tw="flex items-center justify-between w-full p-10 border-t-2 border-[${ogColors.link}] text-[${ogColors.text}]">
 			<p tw="text-2xl ml-3 font-semibold">${siteConfig.title}</p>
-			<p>by ${siteConfig.author}</p>
+			// <p>by ${siteConfig.author}</p>
 		</div>
 	</div>`;
