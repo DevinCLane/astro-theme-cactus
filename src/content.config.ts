@@ -38,6 +38,29 @@ const post = defineCollection({
 		}),
 });
 
+const work = defineCollection({
+	loader: glob({ base: "./src/content/work", pattern: "**/*.{md,mdx}" }),
+	schema: ({ image }) =>
+		baseSchema.extend({
+			description: z.string(),
+			coverImage: z
+				.object({
+					alt: z.string(),
+					src: image(),
+				})
+				.optional(),
+			draft: z.boolean().default(false),
+			ogImage: z.string().optional(),
+			tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
+			projectDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val).getFullYear())
+				.optional(),
+			order: z.number().default(1).optional(),
+		}),
+});
+
 const note = defineCollection({
 	loader: glob({ base: "./src/content/note", pattern: "**/*.{md,mdx}" }),
 	schema: baseSchema.extend({
@@ -56,4 +79,4 @@ const tag = defineCollection({
 	}),
 });
 
-export const collections = { post, note, tag };
+export const collections = { post, work, note, tag };
