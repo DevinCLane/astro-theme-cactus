@@ -28,10 +28,11 @@ const socialLinks: {
 		name: "mdi:github",
 	},
 ];
+const { text } = Astro.props;
 ---
 
 <div class="flex flex-wrap items-end gap-x-2">
-	<p>Follow me on</p>
+	<p>{text}</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
