@@ -4,6 +4,7 @@ description: "Interactive scientific data visualization web app built with React
 coverImage:
   src: "./dalys.png"
   alt: "Astro build wallpaper"
+order: 1
 ---
 
 Interactive scientific data visualization web app built with React, TypeScript, and Vite.
