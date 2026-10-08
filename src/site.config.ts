@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
 		- The webmanifest name found in astro.config.ts L:42
 		- The link value found in src/components/layout/Header.astro L:35
 		- In the footer found in src/components/layout/Footer.astro L:12
-		- the title in the OG image
+		- The title in the OG image
 	*/
 	title: "Devin Lane",
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
@@ -20,9 +20,10 @@ export const siteConfig: SiteConfig = {
 	lang: "en-US",
 	// Meta property, found in src/components/BaseHead.astro L:42
 	ogLocale: "en_US",
+	// Determines whether to show the logo in the template header
+	showLogo: true,
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
-		locale: "en-US",
 		options: {
 			day: "numeric",
 			month: "short",

@@ -28,7 +28,7 @@ Astro Cactus is a simple opinionated starter built with [Astro](https://astro.bu
 
 ## Key Features
 
-- Astro v6 Fast 🚀
+- Astro v7 Fast 🚀
 - Tailwind v4
 - Accessible, semantic HTML markup
 - Responsive & SEO-friendly
@@ -221,7 +221,13 @@ If you are intending to use the [Clouflare adapter](https://docs.astro.build/en/
 }
 ```
 
+### Subdirectory deployment
 
+This theme doesn't handle subdirectory/base-path deployments (e.g. GitHub Pages project sites) out of the box and will cause [issues](https://github.com/chrismwilliams/astro-theme-cactus/pull/480).
+
+All internal links are root-absolute and don't take into account `base` path values.
+
+See Astro's docs on [base](https://docs.astro.build/en/reference/configuration-reference/#base) and [internal linking](https://docs.astro.build/en/guides/deploy/github/#how-to-deploy) if you require this.
 
 ## Acknowledgment
 
